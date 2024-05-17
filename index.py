@@ -5,11 +5,11 @@ from slithering import Snake, Frog, Turtle, Salamander, Newt
 
 
 # Instances for animals that walk (petting zoo animals)
-miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning")
-spot = Dog("Spot", "canine", "midday")
-whiskers = Cat("Whiskers", "feline", "afternoon")
-bunny = Rabbit("Bunny", "lagomorph", "morning")
-billy = Goat("Billy", "caprine", "midday")
+miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning", "llama chow")
+spot = Dog("Spot", "canine", "midday", "dog chow")
+whiskers = Cat("Whiskers", "feline", "afternoon", "cat chow")
+bunny = Rabbit("Bunny", "lagomorph", "morning", "rabbit chow")
+billy = Goat("Billy", "caprine", "midday", "goat chow")
 
 # Instances for animals that slither (pond animals)
 slippy = Snake("Slippy", "serpentine")
@@ -27,6 +27,6 @@ bubbles = Seahorse("Bubbles", "fish")
 
 
 print(miss_fuzz)
-print(nemo)
+print(spot)
 print(f'{spot.name} the {spot.species} is available to pet during the {spot.shift} shift.')
-
+print(spot.feed())
